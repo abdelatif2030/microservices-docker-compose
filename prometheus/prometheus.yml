@@ -1,0 +1,4 @@
+scrape_configs:
+  - job_name: 'docker'
+    static_configs:
+      - targets: ['backend:3000', 'auth-service:3001', 'frontend:3000']
